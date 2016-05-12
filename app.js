@@ -31,9 +31,9 @@ app.use(cors());
 app.use('/', router);
 
 
-var db = mongoose.connection;
-mongoose.connect(config.database);
-db.on('error', console.error);
+// var db = mongoose.connection;
+// mongoose.connect(config.database);
+// db.on('error', console.error);
 
 app.set('superSecret', config.secret)
 app.listen(port);
